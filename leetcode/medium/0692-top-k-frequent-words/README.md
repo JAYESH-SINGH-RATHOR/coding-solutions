@@ -45,9 +45,9 @@ Explanation: "the", "is", "sunny" and "day" are the four most frequent words, wi
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-07-07T18:11:14.572Z  
+**Runtime:** 0 ms  
+**Memory:** 42.6 MB  
+**Submitted:** 2026-07-07T18:11:53.669Z  
 
 ```java
 class Solution {
@@ -63,23 +63,18 @@ class Solution {
         }
         // System.out.print(map);
         PriorityQueue<String> pq = new PriorityQueue<>(
-            (a, b) -> {
-                if (map.get(a).equals(map.get(b))) {
-                    return b.compareTo(a);   // reverse lexicographical
-                }
-                return map.get(a) - map.get(b); // smaller frequency first
-            }
+            
         );
         for(String ch : map.keySet()){
            pq.add(ch);
            if(pq.size() > k){
-            pq.remove(ch);
+            pq.remove();
            }
         }
         while(!pq.isEmpty()){
             res.add(pq.remove());
         }
-        // Collections.reverse(res);
+        Collections.reverse(res);
         return res;
     }
 }
