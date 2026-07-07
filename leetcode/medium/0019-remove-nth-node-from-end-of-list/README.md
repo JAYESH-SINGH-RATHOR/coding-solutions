@@ -48,9 +48,9 @@ Output: [1]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-07-07T05:10:46.350Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43.6 MB (beats 39.67%)  
+**Submitted:** 2026-07-07T05:10:53.994Z  
 
 ```java
 /**
@@ -107,7 +107,7 @@ class Solution {
         temp = temp.next;
        }
        temp.next = temp.next.next;
-    return dummy.next;
+        return dummy.next;
     }
 }
 
