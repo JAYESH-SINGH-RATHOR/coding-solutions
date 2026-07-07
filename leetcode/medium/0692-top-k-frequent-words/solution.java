@@ -10,24 +10,17 @@ class Solution {
             map.put(ch , freq + 1);
         }
         // System.out.print(map);
-        PriorityQueue<String> pq = new PriorityQueue<>(
-            (a, b) -> {
-                if (map.get(a).equals(map.get(b))) {
-                    return b.compareTo(a);   // reverse lexicographical
-                }
-                return map.get(a) - map.get(b); // smaller frequency first
-            }
-        );
+        PriorityQueue<String> pq = new PriorityQueue<>(Collections.reverseOrder());
         for(String ch : map.keySet()){
            pq.add(ch);
            if(pq.size() > k){
-            pq.remove();
+            pq.remove(ch);
            }
         }
         while(!pq.isEmpty()){
             res.add(pq.remove());
         }
-        // Collections.reverse(res);
+        // Collections.reverse(res); 
         return res;
     }
 }
