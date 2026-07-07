@@ -1,20 +1,17 @@
 class Solution {
     public long sumAndMultiply(int n) {
-        int sum = 0;
-        StringBuilder sb = new StringBuilder();
-        if(sb.length() == 0){
+        if(n <= 0){
             return 0;
         }
-        while(n > 0){
-            int val = n % 10;
-            if(val != 0){
-                sb.append(val);
-                sum += val;
-            }
-            n /= 10;
-        }
-        sb.reverse();
-      int x = Integer.parseInt(sb.toString());
-        return x * sum;
+        int sum = 0;
+        int arr[] = new int [n];
+        long mul = 1;
+       for(int i = 0; i < n; i++){
+            arr[i] = i;
+       }
+       for(int i = 1; i < arr.length; i++){
+        sum += arr[i];
+       }
+       return sum * mul;
     }
 }
