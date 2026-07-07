@@ -52,6 +52,6 @@ class Solution {
         temp = temp.next;
        }
        temp.next = temp.next.next;
-    return dummy.next;
+        return dummy.next;
     }
 }
