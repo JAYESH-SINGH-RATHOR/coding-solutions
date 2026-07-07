@@ -9,7 +9,14 @@ class Solution {
             int freq = map.get(ch);
             map.put(ch , freq + 1);
         }
-        System.out.print(map);
+        // System.out.print(map);
+        PriorityQueue<String> pq = new PriorityQueue<>(Collections.reverseOrder());
+        for(String ch : map.keySet()){
+            int freq = map.get(ch);
+            if(map.get(ch) >= k){
+                res.add(ch);
+            }
+        }
         return res;
     }
 }
