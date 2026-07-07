@@ -10,7 +10,7 @@ class Solution {
             map.put(ch , freq + 1);
         }
         // System.out.print(map);
-        PriorityQueue<String> pq = new PriorityQueue<>(Collections.reverseOrder());
+        PriorityQueue<String> pq = new PriorityQueue<>();
         for(String ch : map.keySet()){
            pq.add(ch);
            if(pq.size() > k){
@@ -20,7 +20,6 @@ class Solution {
         while(!pq.isEmpty()){
             res.add(pq.remove());
         }
-        Collections.reverse(res); 
         return res;
     }
 }
