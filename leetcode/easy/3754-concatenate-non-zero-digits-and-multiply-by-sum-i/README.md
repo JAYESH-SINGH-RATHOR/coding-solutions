@@ -46,9 +46,9 @@ Return an integer representing the value of `x * sum`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 24 ms  
+**Runtime:** 26 ms  
 **Memory:** 82.8 MB  
-**Submitted:** 2026-07-07T05:47:11.108Z  
+**Submitted:** 2026-07-07T05:49:01.259Z  
 
 ```java
 class Solution {
@@ -62,9 +62,13 @@ class Solution {
        for(int i = 0; i < n; i++){
             arr[i] = i;
        }
+    //    for(int i = 0; i < arr.length; i++){
+    //         System.out.print(arr[i] + " ");
+    //    }
        for(int i = 1; i < arr.length; i++){
         sum += arr[i];
        }
+       System.out.print(sum);
        return sum * mul;
     }
 }
