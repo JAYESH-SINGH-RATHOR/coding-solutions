@@ -24,13 +24,14 @@ public class Solution {
 
     // using two pointer approach
 
-    int j = 0 , i = 0;
-    while(i < s.length() && j < t.length()){
-        if(s.charAt(i ) == t.charAt(j )){
-            i++;
+    int left =0;    
+    int right =0;
+    while(left < s.length() && right < t.length()){
+        if(s.charAt(left) == s.charAt(right)){
+            left++;
         }
-        j++;
+        right++;
     }
-    return i == s.length();
+    return left == t.length();
     }
 }
