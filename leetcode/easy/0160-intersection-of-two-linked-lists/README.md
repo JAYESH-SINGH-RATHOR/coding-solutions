@@ -78,8 +78,8 @@ Explanation: The two lists do not intersect, so return null.
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-07-08T14:58:03.043Z  
+**Memory:** 42.9 MB  
+**Submitted:** 2026-07-08T14:58:45.228Z  
 
 ```java
 public class Solution {
@@ -108,10 +108,10 @@ public class Solution {
         ListNode temp1 = headA;
         ListNode temp2 = headB;
         while(temp1 != temp2){
-            if(temp1 != null){
+            while(temp1 != null){
                 temp1 = temp1.next;
                 return headB;
-            }else if(temp2 != null){
+            }while(temp2 != null){
                 temp2 = temp2.next;
                 return headA;
             }
