@@ -41,9 +41,9 @@ Output: false
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 72.24%)  
-**Memory:** 42.7 MB (beats 79.71%)  
-**Submitted:** 2026-07-08T16:29:45.293Z  
+**Runtime:** 0 ms  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-07-08T16:27:54.155Z  
 
 ```java
 public class Solution {
@@ -72,14 +72,15 @@ public class Solution {
 
     // using two pointer approach
 
-    int j = 0 , i = 0;
-    while(i < s.length() && j < t.length()){
-        if(s.charAt(i ) == t.charAt(j )){
-            i++;
+    int left =0;    
+    int right =0;
+    while(left < s.length() && right < t.length()){
+        if(s.charAt(left) == s.charAt(right)){
+            left++;
         }
-        j++;
+        right++;
     }
-    return i == s.length();
+    return left == t.length();
     }
 }
 
