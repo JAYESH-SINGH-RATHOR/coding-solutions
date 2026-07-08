@@ -24,10 +24,10 @@ public class Solution {
         ListNode temp1 = headA;
         ListNode temp2 = headB;
         while(temp1 != temp2){
-            if(temp1 != null){
+            while(temp1 != null){
                 temp1 = temp1.next;
                 return headB;
-            }else if(temp2 != null){
+            }while(temp2 != null){
                 temp2 = temp2.next;
                 return headA;
             }
