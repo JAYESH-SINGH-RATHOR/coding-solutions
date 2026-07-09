@@ -46,30 +46,24 @@ Return an integer representing the value of `x * sum`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 26 ms  
-**Memory:** 82.8 MB  
-**Submitted:** 2026-07-07T05:49:01.259Z  
+**Runtime:** 0 ms  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-07-09T17:26:42.113Z  
 
 ```java
 class Solution {
     public long sumAndMultiply(int n) {
-        if(n <= 0){
-            return 0;
+       String s = Integer.toString(n);
+       long sum = 0;
+       long ans = 0;
+       for(int i = 0; i < s.length(); i++){
+        int digit = s.charAt(i) - '0';
+        if(digit != 0){
+            sum += digit;
         }
-        int sum = 0;
-        int arr[] = new int [n];
-        long mul = 1;
-       for(int i = 0; i < n; i++){
-            arr[i] = i;
+        ans =ans * 10 + digit;
        }
-    //    for(int i = 0; i < arr.length; i++){
-    //         System.out.print(arr[i] + " ");
-    //    }
-       for(int i = 1; i < arr.length; i++){
-        sum += arr[i];
-       }
-       System.out.print(sum);
-       return sum * mul;
+       return ans * sum;
     }
 }
 ```
