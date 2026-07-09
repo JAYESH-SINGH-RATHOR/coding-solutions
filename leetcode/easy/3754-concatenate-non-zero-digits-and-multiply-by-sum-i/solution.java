@@ -1,21 +1,15 @@
 class Solution {
     public long sumAndMultiply(int n) {
-        if(n <= 0){
-            return 0;
+       String s = Integer.toString(n);
+       long sum = 0;
+       long ans = 0;
+       for(int i = 0; i < s.length(); i++){
+        int digit = s.charAt(i) - '0';
+        if(digit != 0){
+            sum += digit;
         }
-        int sum = 0;
-        int arr[] = new int [n];
-        long mul = 1;
-       for(int i = 0; i < n; i++){
-            arr[i] = i;
+        ans =ans * 10 + digit;
        }
-    //    for(int i = 0; i < arr.length; i++){
-    //         System.out.print(arr[i] + " ");
-    //    }
-       for(int i = 1; i < arr.length; i++){
-        sum += arr[i];
-       }
-       System.out.print(sum);
-       return sum * mul;
+       return ans * sum;
     }
 }
