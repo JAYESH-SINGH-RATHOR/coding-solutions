@@ -57,24 +57,18 @@
 public class Solution{
     public ListNode sortList(ListNode head) {
     if (head == null || head.next == null) return head;
-
-    // 1. Copy values to an ArrayList
     List<Integer> vals = new ArrayList<>();
     ListNode curr = head;
     while (curr != null) {
         vals.add(curr.val);
         curr = curr.next;
     }
-
-    // 2. Use Collections.sort()
     Collections.sort(vals);
-
-    // 3. Write sorted values back to the original list
-    // curr = head;
-    // for (int val : vals) {
-    //     curr.val = val;
-    //     curr = curr.next;
-    // }
+    curr = head;
+    for (int val : vals) {
+        curr.val = val;
+        curr = curr.next;
+    }
 
     return head;
 }
