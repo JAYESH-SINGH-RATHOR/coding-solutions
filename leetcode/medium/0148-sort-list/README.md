@@ -47,8 +47,8 @@ Output: []
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-07-09T17:32:10.246Z  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-07-09T17:32:59.693Z  
 
 ```java
 // /**
@@ -123,11 +123,11 @@ public class Solution{
     Collections.sort(vals);
 
     // 3. Write sorted values back to the original list
-    curr = head;
-    for (int val : vals) {
-        curr.val = val;
-        curr = curr.next;
-    }
+    // curr = head;
+    // for (int val : vals) {
+    //     curr.val = val;
+    //     curr = curr.next;
+    // }
 
     return head;
 }
