@@ -46,9 +46,9 @@ Return an integer representing the value of `x * sum`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42 MB  
-**Submitted:** 2026-07-09T17:28:16.431Z  
+**Runtime:** 1 ms (beats 99.95%)  
+**Memory:** 42.9 MB (beats 18.85%)  
+**Submitted:** 2026-07-09T17:28:26.404Z  
 
 ```java
 class Solution {
@@ -60,7 +60,7 @@ class Solution {
         int digit = s.charAt(i) - '0';
         if(digit != 0){
             sum += digit;
-        ans = ans * 10 + digit;
+            ans = ans * 10 + digit;
         }
        }
        return ans * sum;
