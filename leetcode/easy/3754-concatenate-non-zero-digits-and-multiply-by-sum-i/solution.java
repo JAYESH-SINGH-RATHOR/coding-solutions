@@ -7,7 +7,7 @@ class Solution {
         int digit = s.charAt(i) - '0';
         if(digit != 0){
             sum += digit;
-        ans = ans * 10 + digit;
+            ans = ans * 10 + digit;
         }
        }
        return ans * sum;
