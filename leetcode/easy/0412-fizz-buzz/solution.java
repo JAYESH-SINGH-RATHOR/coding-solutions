@@ -6,7 +6,7 @@ class Solution {
                res.add("FizzBuzz");
             } if(i % 3 == 0){
                 res.add("Fizz");
-            }else if(i % 5 == 0){
+            } if(i % 5 == 0){
                 res.add("Buzz");
             }else{
                 res.add(Integer.toString(i));
