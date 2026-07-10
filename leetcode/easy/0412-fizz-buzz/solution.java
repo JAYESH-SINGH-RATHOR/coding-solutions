@@ -4,7 +4,7 @@ class Solution {
         for(int i = 1; i <= n; i++){
             if(i % 3 == 0 && i % 5 == 0){
                res.add("FizzBuzz");
-            } if(i % 3 == 0){
+            }else if(i % 3 == 0){
                 res.add("Fizz");
             }else if(i % 5 == 0){
                 res.add("Buzz");
