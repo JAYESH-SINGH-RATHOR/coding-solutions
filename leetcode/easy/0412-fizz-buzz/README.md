@@ -47,8 +47,8 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-07-10T17:30:57.067Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-07-10T17:31:59.992Z  
 
 ```java
 class Solution {
@@ -61,6 +61,8 @@ class Solution {
                 res.add("Fizz");
             }else if(i % 5 == 0){
                 res.add("Buzz");
+            }else{
+                res.add(Integer.toString(i));
             }
         }
         return res;
