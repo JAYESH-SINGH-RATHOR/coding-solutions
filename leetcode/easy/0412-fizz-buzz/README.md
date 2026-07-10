@@ -46,18 +46,18 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 99.86%)  
-**Memory:** 46.7 MB (beats 64.82%)  
-**Submitted:** 2026-07-10T17:37:16.211Z  
+**Runtime:** 0 ms  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-07-10T17:33:57.674Z  
 
 ```java
 class Solution {
     public List<String> fizzBuzz(int n) {
         ArrayList<String> res = new ArrayList<>();
-        for(int i = 1; i <= n; i++){
+        for(int i = 0; i < n; i++){
             if(i % 3 == 0 && i % 5 == 0){
-               res.add("FizzBuzz");
-            }else if(i % 3 == 0){
+            //    res.add("FizzBuzz");
+            } if(i % 3 == 0){
                 res.add("Fizz");
             }else if(i % 5 == 0){
                 res.add("Buzz");
