@@ -48,7 +48,7 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 **Language:** Java  
 **Runtime:** 0 ms  
 **Memory:** 42.8 MB  
-**Submitted:** 2026-07-10T17:35:24.905Z  
+**Submitted:** 2026-07-10T17:36:23.344Z  
 
 ```java
 class Solution {
@@ -57,7 +57,7 @@ class Solution {
         for(int i = 1; i <= n; i++){
             if(i % 3 == 0 && i % 5 == 0){
                res.add("FizzBuzz");
-            } if(i % 3 == 0){
+            }else if(i % 3 == 0){
                 res.add("Fizz");
             }else if(i % 5 == 0){
                 res.add("Buzz");
