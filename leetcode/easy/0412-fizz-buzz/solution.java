@@ -8,6 +8,8 @@ class Solution {
                 res.add("Fizz");
             }else if(i % 5 == 0){
                 res.add("Buzz");
+            }else{
+                res.add(Integer.toString(i));
             }
         }
         return res;
