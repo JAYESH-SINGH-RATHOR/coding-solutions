@@ -66,7 +66,7 @@ The children need a total of $2 + 4 + 3 + 5 + 1 = 15$ candies, but Chef has only
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T14:31:29.199Z  
+**Submitted:** 2026-07-20T14:30:39.202Z  
 
 ```java
 import java.util.*;
@@ -82,9 +82,7 @@ class Codechef
             if(sum <= candy){
                 System.out.print("Yes");
             }
-            else{
-                System.out.print("No");
-            }
+            System.out.print("No");
         }
     }
 	public static void main (String[] args) throws java.lang.Exception
