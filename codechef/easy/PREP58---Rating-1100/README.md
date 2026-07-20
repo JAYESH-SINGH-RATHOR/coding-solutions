@@ -94,7 +94,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T08:51:23.533Z  
+**Submitted:** 2026-07-20T08:52:13.034Z  
 
 ```java
 /* Node is defined as
@@ -112,14 +112,13 @@ class Node
 class Solution {
     public static Node detectCycle(Node head){
         // Add code here
-        Node temp = head;
         Node slow = head;
         Node fast = head;
         while(fast != null && fast.next != null){
             fast = fast.next.next;
             slow = slow.next;
             if(fast == slow){
-                return fast;
+                return slow;
             }
         }
         return null;
