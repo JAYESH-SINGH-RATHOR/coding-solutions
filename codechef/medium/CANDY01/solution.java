@@ -11,7 +11,9 @@ class Codechef
             if(sum <= candy){
                 System.out.print("Yes");
             }
-            System.out.print("No");
+            else{
+                System.out.print("No");
+            }
         }
     }
 	public static void main (String[] args) throws java.lang.Exception
