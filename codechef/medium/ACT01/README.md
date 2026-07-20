@@ -61,7 +61,7 @@ Chef has $3$ pens but needs $5$. Therefore, he needs to buy $5 - 3 = 2$ more pen
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T14:18:44.222Z  
+**Submitted:** 2026-07-20T14:18:49.931Z  
 
 ```java
 import java.util.*;
