@@ -66,7 +66,7 @@ The children need a total of $2 + 4 + 3 + 5 + 1 = 15$ candies, but Chef has only
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T14:24:48.194Z  
+**Submitted:** 2026-07-20T14:24:19.183Z  
 
 ```java
 import java.util.*;
