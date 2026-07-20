@@ -94,7 +94,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T09:10:42.638Z  
+**Submitted:** 2026-07-20T08:52:48.562Z  
 
 ```java
 /* Node is defined as
@@ -118,12 +118,7 @@ class Solution {
             fast = fast.next.next;
             slow = slow.next;
             if(fast == slow){
-                 slow = head;
-                 while(slow != fast){
-                     slow = slow.next;
-                     fast = fast.next;
-                 }
-                 return slow;
+                return slow;
             }
         }
         return null;
