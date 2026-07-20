@@ -19,7 +19,12 @@ class Solution {
             fast = fast.next.next;
             slow = slow.next;
             if(fast == slow){
-                return slow;
+                 slow = head;
+                 while(slow != fast){
+                     slow = slow.next;
+                     fast = fast.next;
+                 }
+                 return slow;
             }
         }
         return null;
