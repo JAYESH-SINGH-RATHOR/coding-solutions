@@ -111,12 +111,12 @@ After removing all 9’s -> final list = [8 -> 8]
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-08T15:47:25.696Z  
+**Submitted:** 2026-07-20T09:43:07.753Z  
 
-```cpp
+```java
 // class Node {
 //     int data;
 //     Node next;
@@ -130,21 +130,19 @@ After removing all 9’s -> final list = [8 -> 8]
 
 static Node removeKey(Node head, int key) {
     //write code here...
-    if(head == null){
-        return new Node(-1);
-    }
-    while( head != null && head.data == key ){
-        head = head.next;
-    }
-    Node curr = head;
-    while(curr != null && curr.next != null){
-        if(curr.next.data == key){
-            curr.next = curr.next.next;
-        }else{
-            curr = curr.next;
-        }
-    }
-    return head;
+   while(head != null && head.data == key){
+       head = head.next;
+   }
+   Node temp = head;
+   while(temp != null && temp.next != null){
+       if(temp.next.data == key){
+           temp.next = temp.next.next;
+       }
+       else{
+           temp = temp.next;
+       }
+   }
+   return head;
 }
 ```
 
