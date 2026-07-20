@@ -4,10 +4,7 @@ import java.io.*;
 
 class Codechef
 {
-    public static int sub(int  n , int p){
-        int res = n - p;
-        return res;
-    }
+   
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
@@ -15,7 +12,7 @@ class Codechef
 		int n = sc.nextInt();
 		int p = sc.nextInt();
 		
-		sub(n , p);
+		System.out.print(n - p);
 
 	}
 }
