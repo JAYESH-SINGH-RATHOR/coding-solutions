@@ -57,7 +57,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T09:59:04.299Z  
+**Submitted:** 2026-07-20T09:59:24.253Z  
 
 ```java
 // Node is defined as:
