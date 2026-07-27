@@ -44,7 +44,7 @@ Revenue = $5 + 5 = 10$, which is greater than selling the plank as a single piec
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T15:02:06.487Z  
+**Submitted:** 2026-07-27T15:03:11.494Z  
 
 ```java
 import java.util.*;
