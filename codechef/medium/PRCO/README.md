@@ -63,7 +63,7 @@ The palindromic subsequences are:
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T15:01:18.839Z  
+**Submitted:** 2026-07-27T14:59:01.841Z  
 
 ```java
 import java.util.*;
