@@ -65,15 +65,24 @@ Remove one of the `2`s to obtain the array `[1, 2, 2, 1]`. Then remove one of th
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T14:15:04.250Z  
+**Submitted:** 2026-07-27T14:29:23.206Z  
 
 ```java
 import java.util.Scanner;
 
 public class Main {
+    public static int count(int arr[]){
+        
+    }
     public static void main(String[] args) {
         // Write your code here
-        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i = 0 ; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+        count(arr);
     }
 }
 ```
