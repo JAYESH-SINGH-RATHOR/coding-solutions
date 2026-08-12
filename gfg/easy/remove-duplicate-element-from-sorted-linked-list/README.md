@@ -33,7 +33,7 @@ Explanation: In the given linked list  2 -> 2 -> 2 -> 2, 2 is the only element a
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-06T11:05:54.128Z  
+**Submitted:** 2026-08-12T13:15:24.027Z  
 
 ```java
 /* Structure of linked list Node
@@ -50,13 +50,16 @@ class Node {
 class Solution {
     Node removeDuplicates(Node head) {
         // code here
-        Node temp = head;
-        while(temp != null && temp.next != null){
-            if(temp.data == temp.next.data){
-                temp.next = temp.next.next;
-            }else{
-                temp = temp.next;
-            }
+       if(head == null){
+           return head;
+       }
+       Node temp = head;
+       while(temp != null && temp.next != null){
+           if(temp.data == temp.next.data){
+               temp.next = temp.next.next;
+           }else{
+               temp = temp.next;
+           }
         }
         return head;
     }
