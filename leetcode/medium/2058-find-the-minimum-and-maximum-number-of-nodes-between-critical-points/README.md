@@ -64,8 +64,8 @@ Note that the last node is not considered a local maxima because it does not hav
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 99.87%)  
-**Memory:** 106.1 MB (beats 69.98%)  
-**Submitted:** 2026-08-31T14:25:31.345Z  
+**Memory:** 106.4 MB (beats 31.80%)  
+**Submitted:** 2026-08-31T14:27:01.625Z  
 
 ```java
 class Solution {
