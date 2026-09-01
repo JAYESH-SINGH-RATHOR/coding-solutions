@@ -15,10 +15,12 @@ class Solution {
             head = head.next;
         }
         while(curr != null && curr.next != null){
-            if(curr.val == val){
+            if(curr.next.val == val){
                 curr.next = curr.next.next;
             }
-            curr = curr.next;
+            else{
+                curr = curr.next;
+            }
         }
         return head;
     }
