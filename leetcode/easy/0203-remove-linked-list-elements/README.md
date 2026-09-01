@@ -43,9 +43,9 @@ Output: []
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 96.91%)  
-**Memory:** 47.5 MB (beats 7.67%)  
-**Submitted:** 2026-09-01T19:14:34.850Z  
+**Runtime:** 0 ms  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-09-01T19:13:56.187Z  
 
 ```java
 /**
@@ -65,12 +65,10 @@ class Solution {
             head = head.next;
         }
         while(curr != null && curr.next != null){
-            if(curr.next.val == val){
+            if(curr.val == val){
                 curr.next = curr.next.next;
             }
-            else{
-                curr = curr.next;
-            }
+            curr = curr.next;
         }
         return head;
     }
