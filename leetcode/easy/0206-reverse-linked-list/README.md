@@ -46,9 +46,9 @@ Output: []
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 4.19%)  
-**Memory:** 44.6 MB (beats 14.05%)  
-**Submitted:** 2026-09-01T17:02:21.709Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 44.2 MB (beats 68.41%)  
+**Submitted:** 2026-09-01T17:11:59.911Z  
 
 ```java
 /**
@@ -61,20 +61,42 @@ Output: []
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+ // bruteforce solution 
+// class Solution {
+//     public ListNode reverseList(ListNode head) {
+//         Stack<Integer> st = new Stack<>();
+//         ListNode temp = head;
+//         while(temp != null){
+//             st.push(temp.val);
+//             temp = temp.next;
+//         }
+//         temp = head;
+//         while(temp != null &&!st.isEmpty()){
+//             temp.val = st.pop();
+//             temp = temp.next;
+//         }
+//         return head;
+//     }
+// }
+
+
+// optimzed solutions // 
 class Solution {
     public ListNode reverseList(ListNode head) {
-        Stack<Integer> st = new Stack<>();
-        ListNode temp = head;
-        while(temp != null){
-            st.push(temp.val);
-            temp = temp.next;
+        if(head == null){
+            return head;
         }
-        temp = head;
-        while(temp != null &&!st.isEmpty()){
-            temp.val = st.pop();
-            temp = temp.next;
+        ListNode curr = head;
+        ListNode prev = null;
+        ListNode next;
+        while(curr != null ){
+           next = curr.next;
+           curr.next = prev;
+           prev = curr;
+           curr = next;
         }
-        return head;
+        return prev;
     }
 }
 ```
