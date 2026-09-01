@@ -43,9 +43,9 @@ Output: []
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 97.02%)  
-**Memory:** 47.4 MB (beats 40.35%)  
-**Submitted:** 2026-08-12T13:32:00.039Z  
+**Runtime:** 0 ms  
+**Memory:** 42.4 MB  
+**Submitted:** 2026-09-01T19:13:29.125Z  
 
 ```java
 /**
@@ -60,19 +60,15 @@ Output: []
  */
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
-        if(head == null){
-            return head;
-        }
-        while(  head != null && (head.val == val)){
+        ListNode curr = head;
+        while(head != null && head.val == val){
             head = head.next;
         }
-        ListNode temp = head;
-        while(temp != null && temp.next != null){
-            if(temp.next.val == val){
-                temp.next = temp.next.next;
-            }else{
-                temp = temp.next;
+        while(curr != null ){
+            if(curr.next.val == val){
+                curr.next = curr.next.next;
             }
+            curr = curr.next;
         }
         return head;
     }
