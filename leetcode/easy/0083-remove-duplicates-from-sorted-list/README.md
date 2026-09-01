@@ -36,8 +36,8 @@ Output: [1,2,3]
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 45.3 MB (beats 85.35%)  
-**Submitted:** 2026-08-12T13:13:14.112Z  
+**Memory:** 45.3 MB (beats 69.49%)  
+**Submitted:** 2026-09-01T19:37:40.223Z  
 
 ```java
 /**
@@ -52,17 +52,16 @@ Output: [1,2,3]
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if(head == null){
-            return head;
-        }
-        ListNode temp = head;
-        while(temp != null && temp.next != null){
-            if(temp.val == temp.next.val){
-                temp.next = temp.next.next;
+        ListNode curr = head;
+        while(curr != null && curr.next != null){
+        ListNode next = curr.next;
+            if(curr.val == next.val){
+                curr.next = curr.next.next;
             }else{
-                temp = temp.next;
+                curr = curr.next;
             }
         }
+            
         return head;
     }
 }
