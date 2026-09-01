@@ -14,11 +14,13 @@ class Solution {
         while(head != null && head.val == val){
             head = head.next;
         }
-        while(curr != null ){
+        while(curr != null && curr.next != null){
             if(curr.next.val == val){
                 curr.next = curr.next.next;
             }
-            curr = curr.next;
+            else{
+                curr = curr.next;
+            }
         }
         return head;
     }
