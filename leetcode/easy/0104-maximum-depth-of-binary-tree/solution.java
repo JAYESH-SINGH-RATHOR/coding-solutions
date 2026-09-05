@@ -24,7 +24,7 @@ class Solution {
         int right = maxDepth(root.right);
         // System.out.println(right);
 
-      depth =  Math.max(depth , (left +  right) + 1);
+      depth =  Math.max(depth , (left +  right)) + 1;
         return depth;
     }
 }
