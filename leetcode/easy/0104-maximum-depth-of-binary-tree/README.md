@@ -37,8 +37,8 @@ Output: 2
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-09-05T18:01:59.774Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-09-05T18:02:15.750Z  
 
 ```java
 /**
@@ -67,7 +67,7 @@ class Solution {
         int right = maxDepth(root.right);
         // System.out.println(right);
 
-      depth =  Math.max(depth , (left +  right) + 1);
+      depth =  Math.max(depth , (left +  right)) + 1;
         return depth;
     }
 }
