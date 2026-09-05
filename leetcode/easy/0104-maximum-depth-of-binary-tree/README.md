@@ -36,9 +36,9 @@ Output: 2
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 47 MB (beats 66.58%)  
-**Submitted:** 2026-09-05T18:03:51.293Z  
+**Runtime:** 0 ms  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-09-05T18:02:27.177Z  
 
 ```java
 /**
@@ -59,14 +59,16 @@ Output: 2
 class Solution {
     public int maxDepth(TreeNode root) {
         if(root == null){
-            return 0;
+            return -1;
         }
+        int depth = -1;
         int left = maxDepth(root.left);
         // System.out.println(left);
         int right = maxDepth(root.right);
         // System.out.println(right);
 
-      return Math.max(left , right)  + 1;
+      depth =  Math.max(depth , (left +  right)) + 1;
+        return depth + 1;
     }
 }
 ```
